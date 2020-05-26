@@ -1,0 +1,566 @@
+/* Universals */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html, button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+
+h1, h2, p {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #46709F;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #747474;
+}
+
+p {
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+button.primary {
+    background: linear-gradient(270deg, #46709F 0%, #60A6DA 100%);
+    font-weight: bold;
+    color: white;
+}
+
+button.secondary {
+    border: 2px solid #60A6DA;
+    margin-left: 1rem;
+    font-weight: lighter;
+    color: #60A6DA;
+    padding: 10px;
+}
+
+button.primary:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+button.secondary:hover {
+    background-color: #60A6DA;
+    border: 2px solid #60A6DA;
+    margin-left: 1rem;
+    color: white;
+    font-weight: lighter;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Top Header/Navigation */
+
+.b2w {
+    background: linear-gradient(180deg, #6ACDEF 0%, #FFFFFF 100%);
+    min-height: 90vh;
+}
+
+header {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-height: 10vh;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+}
+
+nav ul li a:hover {
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+    opacity: 0.8    ;
+}
+
+/* Intro Section */
+
+#intro {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.intro-text {
+    max-width: 40%;
+}
+
+.intro-text p {
+    margin: 2rem 0 4rem;
+}
+
+.intro-img {
+    text-align: end;
+}
+
+.intro-img img {
+    max-width: 90%;
+}
+
+@keyframes scrolldown {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-45%);
+    }
+}
+
+.scroll-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 50px;
+    color: #60A6DA;
+    animation: scrolldown 750ms infinite alternate;
+    margin: 1rem auto;
+}
+
+.scroll-down img {
+    filter: invert(41%) sepia(35%) saturate(660%) hue-rotate(171deg) brightness(94%) contrast(92%);
+}
+
+/* Cryptos Section */
+
+.wave {
+    background-color: white;
+    background-image: url("./img/waves.png");
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#cryptos {
+    display: flex;
+    width: 90%;
+    max-width: 1600px;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crypto-screenshot {
+    flex-basis: 30%;
+}
+
+.cryptocurrencies {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.cryptocurrencies p {
+    margin: 2rem 0px;
+    padding: 2rem;
+    max-width: 70%;
+}
+
+.cryptocurrencies em {
+    color: #60A6DA;
+}
+
+.cryptocurrencies strong {
+    color: #5022ED;
+}
+
+.cryptocurrencies img {
+    width: 40rem;
+    max-width: 70%;
+    margin: 2rem 0px;
+
+}
+
+.cryptocurrencies button {
+    margin: 2rem 0px;
+}
+
+/* Social Proof */
+
+.w2b {
+    background: linear-gradient(180deg, #FFFFFF 24.48%, #6ACDEF 100%);
+    min-height: 90vh;
+}
+
+#proof {
+    width: 90%;
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+#proof em { 
+    color: #46709F;
+}
+
+#proof strong {
+    color: #60A6DA;
+}
+
+#proof p {
+    color: #484848;
+    margin: 2rem 0px;
+}
+
+.trustpilot-widget {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 4rem;
+    border-radius: 10px;
+}
+
+.proof-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.proof-buttons .secondary {
+    color: white;
+    border-color: white;
+    border-width: 1px;
+}
+
+/* Conversion */
+
+#signup {
+    padding-top: 12rem;
+    width: 90%;
+    max-width: 1600px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#signup h2 {
+    color: #46709F;
+    text-align: center;
+}
+
+.shoplist {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#signup h2.signup-cta {
+    color: #484848;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.register button {
+    margin: 5rem;
+}
+
+.container.b2w.small {
+    margin-top: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+}
+
+/* Footer */
+
+footer {
+    background-color: #46709F;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    max-height: 45px;
+    min-height: 30px;
+    width: 90%;
+    max-width: 1600px;
+    margin: 0px auto;
+}
+
+footer .logo {
+    padding: 5px;
+}
+
+footer nav img {
+    max-height: 30px;
+    padding-top: 5px;
+}
+
+footer nav ul li {
+    padding: 4px 0px;
+    margin: 0px 4rem;
+}
+
+/* Media Queries and Breakpoints */
+
+/*Small Adjustments */
+@media only screen and (max-width: 1400px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: 12px;
+    }
+
+    .wave {
+        background-position: bottom right;
+    }
+}
+
+@media only screen and (max-width: 948px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+/*First Big Breakpoint*/
+
+@media only screen and (max-width: 867px) {
+    html {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+
+    #intro .intro-text {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    #intro {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #cryptos .crypto-screenshot, .pay-screen, .intro-img img, .cryptoworld-img {
+        display: none;
+    }
+
+    #signup h2 {
+        font-size: 3rem;
+        line-height: 1.8;
+    }
+
+    .shoplist {
+        margin-bottom: 10rem;
+    }
+}
+
+/* Adjust for tablets and landscape */
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
+    #cryptos {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    #cryptos .cryptocurrencies, #cryptos .cryptocurrencies p {
+        padding: 0px;
+    }
+
+    .wave {
+        background-image: none;
+    }
+/* 
+    .shoplist {
+        flex-direction: column-reverse;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 5rem 0px;
+    } */
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Devices, Phones */
+
+@media only screen and (max-width: 640px) {
+    html {
+        font-size: 12px;
+    }
+
+    .intro-text button {
+        height: 50px;
+        width: 100px;
+        margin: 1rem;
+    }
+
+    .intro-text p {
+        margin-bottom: 1rem;
+    }
+
+    .scroll-down {
+        margin-top: -1rem;
+    }
+
+    #cryptos .cryptocurrencies, #cryptos .cryptocurrencies p {
+        padding: 0px;
+        min-width: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        font-size: 16px;
+    }
+
+    header nav .logo {
+        margin-bottom: 1rem;
+        max-width: 200px;
+    }
+
+    #proof h2 {
+        margin: 10rem auto 3rem;
+    }
+}
+
+@media only screen and (max-width: 564px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+/* Very Small Phones */
+
+@media only screen and (max-width: 480px) {
+    button.secondary {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 0px;
+    }
+
+    #proof button.primary {
+        margin-right: 3rem;
+    }
+
+    em {
+        font-size: 20px;
+    }
+
+    footer .logo {
+        display: none;
+    }
+
+    footer nav {
+        justify-content: center;
+    }
+
+    footer .nav-link {
+        margin: 0px;
+    }
+
+    footer nav ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
