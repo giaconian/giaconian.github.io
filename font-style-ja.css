@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+html, button {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Open Sans', sans-serif;
+    font-size: 16px;
+}
