@@ -1,0 +1,4 @@
+#show {display:none ; }
+#hide {display:block;}
+#show:target {display: block; }
+#hide:target {display: none; }
