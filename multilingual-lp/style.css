@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+html,
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+li {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #4B4B4B;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1, h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 5rem;
+  text-align: center;
+  color: #F3F3F3;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.primary-btn, .ghost-btn {
+  border: none;
+  min-width: 150px;
+  min-height: 50px;
+  background-color: #6acdef;
+}
+
+.primary-btn a, .ghost-btn a {
+  font-style: normal;
+  font-weight: regular;
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.primary-btn:focus, .ghost-btn:focus {
+  outline: none;
+}
+
+.primary-btn:hover, .ghost-btn:hover {
+  cursor: pointer;
+}
+
+.ghost-btn {
+  background-color: white;
+  border: 1px solid #6acdef;
+}
+
+.ghost-btn a {
+  color: #6acdef;
+  font-weight: lighter;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.wave-bg {
+  overflow: visible;
+  height: 60vh;
+  width: 100%;
+  background: url("./img/wave-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+}
+
+#main-fold {
+  min-height: 100vh;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#main-fold h1, #main-fold h2 {
+  font-weight: bold;
+}
+
+#main-fold .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-fold .logo-container img {
+  padding: 1.6rem;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container h2 {
+  margin: 0 0 3.2rem;
+}
+
+.featured-img {
+  max-height: 40vh;
+}
+
+.benefits {
+  margin: 3.2rem;
+}
+
+.benefits h2 {
+  font-size: 3.2rem;
+  margin: 0px;
+  color: #505050;
+  margin-bottom: 1.6rem;
+}
+
+.benefits span {
+  color: #0FC2FF;
+}
+
+.benefits ul li {
+  background: url("./img/checkmark.svg") no-repeat left center;
+  padding-left: 30px;
+  margin: 3px 0;
+}
+
+.cta {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+      grid-template-columns: 1fr 10px 1fr;
+}
+
+.cta .primary-btn, .cta .ghost-btn {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.cta .ghost-btn {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+#featured {
+  background-color: #e9e9e9;
+  margin: 3.2rem 0px;
+  padding: 1.6rem;
+}
+
+#featured h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #505050;
+  text-transform: uppercase;
+}
+
+.featured-container {
+  min-height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.partner-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partner-logos img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 1.6rem;
+}
+
+#reasons {
+  margin: 6.4rem 0px;
+}
+
+.reasons-container {
+  width: 90%;
+  max-width: 1280px;
+  padding: 1.6rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reason-card {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 270px;
+  padding: 3.2rem;
+}
+
+.reason-card .reasons-icon {
+  max-height: 50px;
+}
+
+.reason-card h2 {
+  color: #6acdef;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+  padding: 3.2rem 0px;
+  text-align: start;
+}
+
+.reason-card p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #505050;
+}
+
+.gallery-container {
+  width: 100vw;
+}
+
+.gallery-container .ugc-1 {
+  background-image: url("./img/ugc-fishing.png");
+}
+
+.gallery-container .ugc-2 {
+  background-image: url("./img/ugc-kirby.png");
+}
+
+.gallery-container .ugc-3 {
+  background-image: url("./img/ugc-magazine.png");
+}
+
+.gallery-container .ugc-4 {
+  background-image: url("./img/ugc-zenflier.png");
+}
+
+.gallery-container .ugc-5 {
+  background-image: url("./img/ugc-gundam-figures.png");
+}
+
+.gallery-container .ugc-6 {
+  background-image: url("./img/ugc-dragonball.png");
+}
+
+.gallery-container .ugc {
+  height: 400px;
+  width: 33vw;
+  background-size: cover;
+}
+
+.gallery-container .gallery-toprow,
+.gallery-container .gallery-btmrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
